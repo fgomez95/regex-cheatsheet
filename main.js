@@ -8,3 +8,9 @@ console.log(testRegex.test(testStr), /Hello/.test(testRegex));
 const animals = "cat, dog, cow, shark";
 const myAnimals = /chicken|hen|cow/;
 console.log(myAnimals.test(animals));
+
+// Ignore casing using " i "
+const greetingStr = "Hi, my name is Fernando.";
+const nameRegex = /fernando/i;
+
+console.log(nameRegex.test(greetingStr));
