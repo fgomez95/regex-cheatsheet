@@ -1,5 +1,4 @@
 // Find patterns in strings using the Test method
-
 const testStr = "Hello, world";
 const testRegex = /Hello/;
 console.log(testRegex.test(testStr), /Hello/.test(testRegex));
@@ -14,3 +13,7 @@ const greetingStr = "Hi, my name is Fernando.";
 const nameRegex = /fernando/i;
 
 console.log(nameRegex.test(greetingStr));
+
+// Extract a word using Match 
+const myGreeting = "hello, world";
+console.log(myGreeting.match(/hello/));
