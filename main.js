@@ -21,3 +21,7 @@ console.log(myGreeting.match(/hello/));
 // Find more matches using the " g " flag.
 const myRepeat = "hello, hello, hello";
 console.log(myRepeat.match(/hello/g));
+
+// Match anything with Period wildcard
+const someString = "token, tomato, cat, car, dog, Tokyo";
+console.log(someString.match(/to./ig));
