@@ -30,3 +30,8 @@ console.log(someString.match(/to./ig));
 const bagOfWords = "dig, dog, dug, dag, dear, dong";
 const myRegex = /d[aeiou]g/ig;
 console.log(bagOfWords.match(myRegex));
+
+// Abstract a character set using hyphen.
+const alphabetString = "a, b, c, d, e, f, g";
+const alphMatch = /[a-d]/ig;
+console.log(alphabetString.match(alphMatch));
