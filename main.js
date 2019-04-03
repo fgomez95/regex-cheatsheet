@@ -35,3 +35,8 @@ console.log(bagOfWords.match(myRegex));
 const alphabetString = "a, b, c, d, e, f, g";
 const alphMatch = /[a-d]/ig;
 console.log(alphabetString.match(alphMatch));
+
+// Match number and character range
+const str = "212 2112 221 221 212 21 212121 2121 221 2212112 2212122 1212 2121 212121 2121 21 212 12112";
+const matchNumber = /2[1-2][1-2]1/g;
+console.log(str.match(matchNumber));
