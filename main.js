@@ -45,3 +45,13 @@ console.log(str.match(matchNumber));
 const lettNumRange = "fizz buzz f1zz f0zz f3zz";
 const lettNumMatch = /f[a-z0-2]zz/ig;
 console.log(lettNumRange.match(lettNumMatch));
+
+// Match not specified single characters 
+const tigersString = "3 tristes tigres.";
+const negativeMatch = /[^0-9]/ig;
+console.log(tigersString.match(negativeMatch).length);
+
+// Exclude character set using a caret
+const myRandomQuote = "1. Don't Make Others Suffer for Your Personal Hatred..";
+const myMatch = /[^0-9^aeiou]/ig;
+console.log(myRandomQuote.match(myMatch).length);
