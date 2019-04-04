@@ -40,3 +40,8 @@ console.log(alphabetString.match(alphMatch));
 const str = "212 2112 221 221 212 21 212121 2121 221 2212112 2212122 1212 2121 212121 2121 21 212 12112";
 const matchNumber = /2[1-2][1-2]1/g;
 console.log(str.match(matchNumber));
+
+// Match number and letter range 
+const lettNumRange = "fizz buzz f1zz f0zz f3zz";
+const lettNumMatch = /f[a-z0-2]zz/ig;
+console.log(lettNumRange.match(lettNumMatch));
