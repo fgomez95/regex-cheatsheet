@@ -55,3 +55,13 @@ console.log(tigersString.match(negativeMatch).length);
 const myRandomQuote = "1. Don't Make Others Suffer for Your Personal Hatred..";
 const myMatch = /[^0-9^aeiou]/ig;
 console.log(myRandomQuote.match(myMatch).length);
+
+// Match if a character occurs n times
+const longWord = "antidisestablishmentarianism";
+const lgRegex = /a+/g;
+console.log(longWord.match(lgRegex));
+
+// Match characters that occur zero or more times 
+const goalStr = "GOOOOOooooooooooaaaaaaaallllll oo oo foo bar";
+const matchGoal = /o*/ig;
+console.log(goalStr.match(matchGoal));
