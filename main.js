@@ -65,3 +65,11 @@ console.log(longWord.match(lgRegex));
 const goalStr = "GOOOOOooooooooooaaaaaaaallllll oo oo foo bar";
 const matchGoal = /o*/ig;
 console.log(goalStr.match(matchGoal));
+
+// Lazy match 
+const component = `<div>
+                    <h1>Hello, World!</h1>
+                   </div>`;
+const tagMatch = /<.*?>/g;
+console.log(component.match(tagMatch));
+      
