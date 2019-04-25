@@ -82,3 +82,13 @@ console.log(waldoString.match(waldoRegex));
 const waldoMissing = 'Now he can\'t be found';
 console.log(waldoMissing.match(/^waldo/i));
       
+// Match ending of string patterns
+const endOfStr = 'some random sentece Match';
+const endRegex = /match$/i;
+
+console.log(endOfStr.match(endRegex));
+
+const someNewRandomString = 'asdfadfdsf asdfasdf asdfasdfasf AA asdfasdfas asdf';
+const randomEndRegex = /AA$/;
+
+console.log(someNewRandomString.match(randomEndRegex));
