@@ -72,4 +72,13 @@ const component = `<div>
                    </div>`;
 const tagMatch = /<.*?>/g;
 console.log(component.match(tagMatch));
+
+// Match Beginning String Patterns
+const waldoString = 'Waldo can be Waldo matched';
+const waldoRegex = /^waldo/i;
+
+console.log(waldoString.match(waldoRegex));
+
+const waldoMissing = 'Now he can\'t be found';
+console.log(waldoMissing.match(/^waldo/i));
       
