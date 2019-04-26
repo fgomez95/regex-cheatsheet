@@ -111,3 +111,11 @@ console.log(notNumLettMatch.test('521651'));
 console.log(notNumLettMatch.test('asdfasfasdfasdf'));
 console.log(notNumLettMatch.test(/*this should match because of space */'_  sadfas asdf'));
 console.log(notNumLettMatch.test(' #@!#$@$% '));
+
+// Match all numbers
+
+const numMatch = /\d+/g;
+const numString = '10 10 10 2205 6540654';
+
+console.log(numString.match(numMatch).length);
+console.log('asdfasdfas dfasdfsadfsa'.match(numMatch));
