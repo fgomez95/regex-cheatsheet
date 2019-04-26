@@ -92,3 +92,12 @@ const someNewRandomString = 'asdfadfdsf asdfasdf asdfasdfasf AA asdfasdfas asdf'
 const randomEndRegex = /AA$/;
 
 console.log(someNewRandomString.match(randomEndRegex));
+
+// Match all letters and numbers 
+
+const numLettMatch = /\w+/ig;
+
+console.log(numLettMatch.test('521651'));
+console.log(numLettMatch.test('asdfasf asdfasdf'));
+console.log(numLettMatch.test('_  sadfas asdf'));
+console.log(numLettMatch.test(' #@!#$@$% '));
