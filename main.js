@@ -81,7 +81,7 @@ console.log(waldoString.match(waldoRegex));
 
 const waldoMissing = 'Now he can\'t be found';
 console.log(waldoMissing.match(/^waldo/i));
-      
+
 // Match ending of string patterns
 const endOfStr = 'some random sentece Match';
 const endRegex = /match$/i;
@@ -101,3 +101,13 @@ console.log(numLettMatch.test('521651'));
 console.log(numLettMatch.test('asdfasf asdfasdf'));
 console.log(numLettMatch.test('_  sadfas asdf'));
 console.log(numLettMatch.test(' #@!#$@$% '));
+
+// Match everything except letters and numbers
+
+const notNumLettMatch = /\W+/g;
+
+console.log('Match everything except letters and numbers');
+console.log(notNumLettMatch.test('521651'));
+console.log(notNumLettMatch.test('asdfasfasdfasdf'));
+console.log(notNumLettMatch.test(/*this should match because of space */'_  sadfas asdf'));
+console.log(notNumLettMatch.test(' #@!#$@$% '));
