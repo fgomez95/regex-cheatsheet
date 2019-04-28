@@ -119,3 +119,19 @@ const numString = '10 10 10 2205 6540654';
 
 console.log(numString.match(numMatch).length);
 console.log('asdfasdfas dfasdfsadfsa'.match(numMatch));
+
+// Match all not numbers 
+
+const notNumMatch = /\D/;
+
+console.log('10 20 30 450 asdf %% %%% l54%%% fsd fas d4 f46sd 65s6s'
+    .match(notNumLettMatch));
+
+
+// Exercise: Restrict possible usernames
+
+const myUsername = 'RogeRojas96';
+const invalidUsername = '42skankhunt';
+const usernameMatch = /^[a-z]{2,}\d*$/i;
+console.log(usernameMatch.test(myUsername));
+console.log(usernameMatch.test(invalidUsername));
