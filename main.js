@@ -119,3 +119,10 @@ const numString = '10 10 10 2205 6540654';
 
 console.log(numString.match(numMatch).length);
 console.log('asdfasdfas dfasdfsadfsa'.match(numMatch));
+
+// Match all not numbers 
+
+const notNumMatch = /\D/;
+
+console.log('10 20 30 450 asdf asdfsdfasdf ssd fasd fsd fas d4 f46sd 65s6s'
+    .match(notNumLettMatch));
