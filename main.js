@@ -124,5 +124,14 @@ console.log('asdfasdfas dfasdfsadfsa'.match(numMatch));
 
 const notNumMatch = /\D/;
 
-console.log('10 20 30 450 asdf asdfsdfasdf ssd fasd fsd fas d4 f46sd 65s6s'
+console.log('10 20 30 450 asdf %% %%% l54%%% fsd fas d4 f46sd 65s6s'
     .match(notNumLettMatch));
+
+
+// Exercise: Restrict possible usernames
+
+const myUsername = 'RogeRojas96';
+const invalidUsername = '42skankhunt';
+const usernameMatch = /^[a-z]{2,}\d*$/i;
+console.log(usernameMatch.test(myUsername));
+console.log(usernameMatch.test(invalidUsername));
