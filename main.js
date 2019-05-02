@@ -143,3 +143,10 @@ const myStringWithWhitespace = "something with a bunch of whitespace D:";
 const whitespaceRegex = /\s/g;
 
 console.log(myStringWithWhitespace.match(whitespaceRegex));
+
+// Match non whitespace 
+
+const myStringWithNonWhitespace = "asdfasdf asddfa sdfas dfasd fasdf s";
+const nonWhitespaceRegex = /\S/g;
+console.log(myStringWithNonWhitespace.match(nonWhitespaceRegex).length);
+
