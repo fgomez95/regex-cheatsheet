@@ -135,3 +135,23 @@ const invalidUsername = '42skankhunt';
 const usernameMatch = /^[a-z]{2,}\d*$/i;
 console.log(usernameMatch.test(myUsername));
 console.log(usernameMatch.test(invalidUsername));
+
+
+// Match whitespace
+
+const myStringWithWhitespace = "something with a bunch of whitespace D:";
+const whitespaceRegex = /\s/g;
+
+console.log(myStringWithWhitespace.match(whitespaceRegex));
+
+// Match non whitespace 
+
+const myStringWithNonWhitespace = "asdfasdf asddfa sdfas dfasd fasdf s";
+const nonWhitespaceRegex = /\S/g;
+console.log(myStringWithNonWhitespace.match(nonWhitespaceRegex).length);
+
+// Specify a match range
+
+const hadouken = "Hadouuuuuuuuuuuuuken!";
+const hadoukenRegex = /Hadou{3, 9}ken!/;
+console.log(hadoukenRegex.test(hadoukenRegex));
