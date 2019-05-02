@@ -135,3 +135,11 @@ const invalidUsername = '42skankhunt';
 const usernameMatch = /^[a-z]{2,}\d*$/i;
 console.log(usernameMatch.test(myUsername));
 console.log(usernameMatch.test(invalidUsername));
+
+
+// Match whitespace
+
+const myStringWithWhitespace = "something with a bunch of whitespace D:";
+const whitespaceRegex = /\s/g;
+
+console.log(myStringWithWhitespace.match(whitespaceRegex));
