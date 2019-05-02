@@ -155,3 +155,10 @@ console.log(myStringWithNonWhitespace.match(nonWhitespaceRegex).length);
 const hadouken = "Hadouuuuuuuuuuuuuken!";
 const hadoukenRegex = /Hadou{3, 9}ken!/;
 console.log(hadoukenRegex.test(hadoukenRegex));
+
+
+// Match pattern that occurs n or more number of times
+
+const helloString = "Hellooooooooooooo";
+const helloRegex = /Hello{3,}/;
+console.log(helloString.match(helloRegex));
