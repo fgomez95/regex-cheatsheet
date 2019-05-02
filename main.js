@@ -150,3 +150,8 @@ const myStringWithNonWhitespace = "asdfasdf asddfa sdfas dfasd fasdf s";
 const nonWhitespaceRegex = /\S/g;
 console.log(myStringWithNonWhitespace.match(nonWhitespaceRegex).length);
 
+// Specify a match range
+
+const hadouken = "Hadouuuuuuuuuuuuuken!";
+const hadoukenRegex = /Hadou{3, 9}ken!/;
+console.log(hadoukenRegex.test(hadoukenRegex));
