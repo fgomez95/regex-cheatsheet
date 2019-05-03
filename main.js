@@ -186,3 +186,8 @@ const britishMatch = /colou?r/;
 console.log(color.match(britishMatch));
 
 
+// Lookheads
+
+const passRegex = /(?=\w{5,})(?=\D*\d{2})/;
+console.log(passRegex.test("something that does not match"));
+console.log(passRegex.test("123thisMatches"));
