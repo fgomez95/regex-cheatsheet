@@ -191,3 +191,9 @@ console.log(color.match(britishMatch));
 const passRegex = /(?=\w{5,})(?=\D*\d{2})/;
 console.log(passRegex.test("something that does not match"));
 console.log(passRegex.test("123thisMatches"));
+
+// Capture groups 
+
+let repeatNum = "10 22 52";
+let reRegex = /^(\d+)\s\1\s\1$/; 
+let result = reRegex.test(repeatNum);
